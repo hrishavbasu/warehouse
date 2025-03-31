@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { GoogleTagManager } from '@next/third-parties/google'
+import Navbar from "@/components/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,13 +26,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <noscript>
-          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRTLJCCM"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5DSX4XJ"
+      height="0" width="0" style={{display:"none", visibility:"hidden"}}></iframe></noscript>
+        <Navbar />
         {children}
       </body>
     </html>
