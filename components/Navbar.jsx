@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useState } from 'react';
+import { Ticket } from 'lucide-react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,8 +55,9 @@ export default function Navbar() {
         {/* Book Now Button - Right Side */}
         <div className="w-[200px] flex justify-end">
           <Button 
-            className="hidden md:flex bg-[#E97777] hover:bg-[#E97777]/90 text-white rounded-full px-8 font-medium"
+            className="hidden md:flex bg-[#db8a74] hover:bg-[#db8a74]/90 text-white rounded-full px-6 font-medium items-center gap-2"
           >
+            <Ticket className="w-5 h-5" />
             Book Now
           </Button>
 
@@ -123,9 +125,10 @@ export default function Navbar() {
               Contact Us
             </Link>
             <Button 
-              className="bg-[#E97777] hover:bg-[#E97777]/90 text-white rounded-full px-8 py-6 text-xl w-full max-w-[200px]"
+              className="bg-[#db8a74] hover:bg-[#db8a74]/90 text-white rounded-full px-6 py-6 text-xl w-full max-w-[200px] flex items-center justify-center gap-2"
               onClick={() => setIsMenuOpen(false)}
             >
+              <Ticket className="w-5 h-5" />
               Book Now
             </Button>
           </div>

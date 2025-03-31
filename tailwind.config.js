@@ -8,11 +8,14 @@ module.exports = {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			poppins: ['var(--font-poppins)'],
+  		},
   		colors: {
   			// Main brand colors
   			'brand': {
-  				'orange': '#FF4500', // The bright orange used in CTA buttons
-  				'peach': '#FFD4BC',  // The peachy background color
+  				'orange': '#ff5f00', // Updated from '#FF4500' to '#ff5f00'
+  				'peach': '#db8a74',  // The peachy background color
   				'dark': '#0F1729',   // Dark navy background
   				'gold': '#FFD700',   // Golden yellow used in headings
   			},
@@ -20,27 +23,27 @@ module.exports = {
   			'text': {
   				'primary': '#FFFFFF',
   				'secondary': '#FFD700', // Golden text
-  				'accent': '#FF4500',    // Orange text
+  				'accent': '#ff5f00',    // Updated from '#FF4500' to '#ff5f00'
   			},
   			// UI Elements
   			'ui': {
   				'card': '#1A1F35',      // Dark card backgrounds
   				'overlay': '#0F172980', // Semi-transparent overlay
   				'gradient': {
-  					'start': '#FF4500',
+  					'start': '#ff5f00', // Updated from '#FF4500' to '#ff5f00'
   					'end': '#0F1729',
   				}
   			},
   			// Button colors
   			'button': {
-  				'primary': '#FF4500',
-  				'primary-hover': '#FF5722',
+  				'primary': '#ff5f00',   // Updated from '#FF4500' to '#ff5f00'
+  				'primary-hover': '#ff7033', // Adjusted hover state
   				'secondary': '#E97777', // Pink/coral color for secondary buttons
   				'secondary-hover': '#E98888',
   			},
   			// Featured section
   			'featured': {
-  				'bg': '#FF4500',
+  				'bg': '#ff5f00',    // Updated from '#FF4500' to '#ff5f00'
   				'text': '#FFD700',
   			},
   			background: 'hsl(var(--background))',
