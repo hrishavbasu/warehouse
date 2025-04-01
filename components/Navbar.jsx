@@ -28,25 +28,25 @@ export default function Navbar() {
         <div className="hidden md:flex items-center justify-center gap-16 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <Link 
             href="/" 
-            className="text-white hover:text-gray-200 font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
+            className="text-lg text-white hover:text-gray-200 font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
           >
             Home
           </Link>
           <Link 
             href="/faqs" 
-            className="text-white hover:text-gray-200 font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
+            className="text-lg text-white hover:text-gray-200 font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
           >
             FAQs
           </Link>
           <Link 
             href="/discounts" 
-            className="text-white hover:text-gray-200 font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
+            className="text-lg text-white hover:text-gray-200 font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
           >
             Discounts
           </Link>
           <Link 
             href="/contact" 
-            className="text-white hover:text-gray-200 font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
+            className="text-lg text-white hover:text-gray-200 font-medium relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all hover:after:w-full"
           >
             Contact Us
           </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
         {/* Book Now Button - Right Side */}
         <div className="w-[200px] flex justify-end">
           <Button 
-            className="hidden md:flex bg-[#db8a74] hover:bg-[#db8a74]/90 text-white rounded-full px-6 font-medium items-center gap-2"
+            className="hidden md:flex bg-[#db8a74] hover:bg-[#db8a74]/90 text-white rounded-full px-6 font-medium items-center gap-2 text-lg"
           >
             <Ticket className="w-5 h-5" />
             Book Now
@@ -98,28 +98,28 @@ export default function Navbar() {
 
             <Link 
               href="/" 
-              className="text-white text-2xl hover:text-gray-200 font-medium"
+              className="text-3xl text-white hover:text-gray-200 font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link 
               href="/faqs" 
-              className="text-white text-2xl hover:text-gray-200 font-medium"
+              className="text-3xl text-white hover:text-gray-200 font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               FAQs
             </Link>
             <Link 
               href="/discounts" 
-              className="text-white text-2xl hover:text-gray-200 font-medium"
+              className="text-3xl text-white hover:text-gray-200 font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               Discounts
             </Link>
             <Link 
               href="/contact" 
-              className="text-white text-2xl hover:text-gray-200 font-medium"
+              className="text-3xl text-white hover:text-gray-200 font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact Us
